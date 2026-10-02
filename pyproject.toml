@@ -1,0 +1,17 @@
+[project]
+name = "tech-challenge-1-fiap"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.142.2",
+    "kagglehub>=1.0.2",
+    "loguru>=0.7.3",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "pytest>=9.1.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "uvicorn>=0.54.0",
+]
