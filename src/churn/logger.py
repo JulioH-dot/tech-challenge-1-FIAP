@@ -15,7 +15,7 @@ def configure_logging(message):
         "logger": record["extra"].get("logger_name", record["name"]),
         "event": record["message"]
     }
-    print(json.dumps(payload), file=sys.stdout)
+    print(json.dumps(payload, ensure_ascii=False), file=sys.stdout)
 
 # Adiciona a configuração de logging ao logger do Loguru
 logger.add(configure_logging, level="INFO")
